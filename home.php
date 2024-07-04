@@ -208,7 +208,6 @@ $oldPassword = "";
                                 $lastName = $row['last_name'];
                                 $contactNumber = $row['contact_number'];
                                 $email = $row['email'];
-                                $username = $row['username'];
 
                                 echo '<tr>
                                     <th scope="row">' . $tbl_user_id . '</th>
@@ -216,7 +215,6 @@ $oldPassword = "";
                                     <td>' . $lastName . '</td>
                                     <td>' . $contactNumber . '</td>
                                     <td>' . $email . '</td>
-                                    <td>' . $username . '</td>
                                     <td>
                                         <button style="font-size:12px;" class="btn btn-success" onclick="update_user(' . $tbl_user_id . ', \'' . $firstName . '\', \'' . $lastName . '\', \'' . $contactNumber . '\', \'' . $email . '\', \'' . $username . '\')" title="Update"><i class="fa-solid fa-pen-to-square"></i> </button>
                                         <button style="font-size:12px;" class="btn btn-danger" onclick="delete_user(' . $tbl_user_id . ')"><i class="fa-solid fa-trash"></i> </button>
